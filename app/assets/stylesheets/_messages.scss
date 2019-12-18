@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.side-bar {
+  width: 300px;
+  color: #fff;
+  font-weight: bold;
+  &__user-name {
+    height: 100px;
+    background-color: #253141;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+  }
+  &__group-list {
+    padding: 20px 20px 0;
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+  }
+}
+
+.top-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  height: 20px;
+  width: 260px;
+  &__name {
+    margin-right: auto;
+  }
+  &__icons {
+    margin-left: auto;
+  }
+  &__icon {
+    color: #fff;
+    font-size: inherit;
+  }
+}
+
+.fa-edit {
+  margin-right: 5px;
+}
+
+.group {
+  margin-bottom: 40px;
+  &__name {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  &__latest-message {
+    font-size: 11px;
+  }
+}
+
+.chat-main {
+  width: calc(100vw - 300px);
+  &__group-info {
+    height: 100px;
+    background-color: #fff;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #eee;
+    &--current-group {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 15px;
+      margin-top: 35px;
+    }
+    &--member-list {
+      color: #999;
+      font-size: 12px;
+    }
+  }
+  &__message-list {
+    height: calc(100vh - 190px);
+    background-color: #fafafa;
+    padding: 35px 40px;
+    &--message {
+      margin-bottom: 46px;
+    }
+    &--upper-info {
+      margin-bottom: 12px;
+      display: flex;
+    }
+    &--talker {
+      font-weight: bold;
+      font-size: 16px;
+      color: #333;
+    }
+    &--date {
+      margin-left: 10px;
+      font-size: 12px;
+      color: #999;
+    }
+    &--message-text {
+      font-size: 14px;
+      color: #434a54;
+    }
+  }
+  &__message-form {
+    height: 90px;
+    background-color: #d2d2d2;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    line-height: 50px;
+    &--input-box {
+      padding: 0 10px;
+      height: 50px;
+      width: 100%;
+      background-color: #fff;
+      position: relative;
+      display: flex;
+    }
+    &--input-box-text {
+      color: #434a54;
+    }
+    &--input-box-image {
+      position: absolute;
+      right: 10px;
+    }
+    &--submit-btn {
+      width: 100px;
+      height: 50px;
+      padding: 0 30px;
+      margin-left: 15px;
+      background-color: #38aef0;
+      color: white;
+    }
+  }
+}
+
+.edit-btn {
+  display: block;
+  margin-top: 28px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  border: solid 1px #38aef0;
+  color: #38aef0;
+}
+
+.hidden {
+  display: none;
+}
