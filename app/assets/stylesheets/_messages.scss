@@ -12,7 +12,7 @@ a {
 
 .side-bar {
   width: 300px;
-  color: #fff;
+  color: $white;
   font-weight: bold;
   &__user-name {
     height: 100px;
@@ -42,7 +42,7 @@ a {
     margin-left: auto;
   }
   &__icon {
-    color: #fff;
+    color: $white;
     font-size: inherit;
   }
 }
