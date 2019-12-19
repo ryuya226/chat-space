@@ -5,8 +5,8 @@
         test
       .chat-main__group-info--member-list
         members
-    .chat-main__group-info--btn
-      = link_to "#", class: "edit-btn" do
+    .chat-main__group-info--edit
+      = link_to "#", class: "chat-main__group-info--edit-btn" do
         Edit
   .chat-main__message-list
     .chat-main__message-list--message
@@ -18,9 +18,9 @@
       .chat-main__message-list--message-text
         test-message
   .chat-main__message-form
-    .chat-main__message-form--input-box 
-      .chat-main__message-form--input-box-text
-        type a message
+    %label.chat-main__message-form--input-box 
+      = form_for @message do |f|
+        = f.text_field :text, class: "chat-main__message-form--input-box-text", placeholder: 'type a message'
       %label.chat-main__message-form--input-box-image
         = icon('fa', 'image')
         %input{type: "file",class: "hidden"}
