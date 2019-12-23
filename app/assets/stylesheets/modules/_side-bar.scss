@@ -2,7 +2,6 @@
 .side-bar {
   width: 300px;
   color: $white;
-  font-weight: bold;
   &__user-name {
     height: 100px;
     background-color: #253141;
@@ -25,18 +24,17 @@
   height: 20px;
   width: 260px;
   &__name {
-    margin-right: auto;
+    font-weight: bold;
   }
   &__icons {
-    margin-left: auto;
+    display: flex;
   }
   &__icon {
     color: $white;
     font-size: inherit;
+    margin-left: 5px;
   }
 }
-
-.fa-edit {margin-right: 5px;}
 
 .group {
   margin-bottom: 40px;
