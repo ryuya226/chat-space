@@ -1,9 +1,8 @@
 @import "config/reset";
 @import "config/colors";
-@import "config/messages";
-@import "modules/index-view";
+@import "config/all-view";
 @import "modules/side-bar";
-@import "modules/chat-main";
+@import "modules/main_chat";
 @import "modules/flash";
 @import "modules/user.scss";
 @import "modules/group.scss";
